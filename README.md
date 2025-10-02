@@ -17,7 +17,6 @@ This is a digital products selling website
             color: #333;
             line-height: 1.6;
         }
-
         header {
             background: linear-gradient(135deg, #4a90e2, #50e3c2);
             color: white;
@@ -26,13 +25,11 @@ This is a digital products selling website
             position: relative;
             overflow: hidden;
         }
-
         header h1 {
             font-size: 3em;
             margin: 0;
             animation: fadeInDown 1s ease-out;
         }
-
         header p {
             font-size: 1.2em;
             margin: 10px 0 0;
@@ -40,7 +37,6 @@ This is a digital products selling website
             opacity: 0;
             animation-fill-mode: forwards;
         }
-
         /* Navigation */
         nav {
             background: #fff;
@@ -49,7 +45,6 @@ This is a digital products selling website
             top: 0;
             z-index: 1000;
         }
-
         nav ul {
             list-style: none;
             padding: 0;
@@ -57,11 +52,9 @@ This is a digital products selling website
             display: flex;
             justify-content: center;
         }
-
         nav li {
             margin: 0 15px;
         }
-
         nav a {
             text-decoration: none;
             color: #4a90e2;
@@ -70,13 +63,11 @@ This is a digital products selling website
             display: block;
             transition: color 0.3s, background 0.3s;
         }
-
         nav a:hover {
             color: #fff;
             background: #4a90e2;
             border-radius: 5px;
         }
-
         /* Hero Section Animation */
         .hero-bg {
             position: absolute;
@@ -88,20 +79,17 @@ This is a digital products selling website
             opacity: 0.2;
             animation: zoomIn 10s infinite alternate;
         }
-
         /* Products Section */
         #products {
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
         }
-
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
         .product-card {
             background: #fff;
             border-radius: 10px;
@@ -110,46 +98,38 @@ This is a digital products selling website
             transition: transform 0.3s, box-shadow 0.3s;
             animation: fadeIn 1s ease-out;
         }
-
         .product-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
-
         .product-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             transition: transform 0.5s;
         }
-
         .product-card:hover .product-img {
             transform: scale(1.1);
         }
-
         .product-info {
             padding: 20px;
             text-align: center;
         }
-
         .product-info h3 {
             margin: 0 0 10px;
             font-size: 1.5em;
             color: #4a90e2;
         }
-
         .product-info p {
             margin: 0 0 15px;
             color: #666;
         }
-
         .price {
             font-size: 1.2em;
             font-weight: bold;
             color: #50e3c2;
             margin-bottom: 15px;
         }
-
         .buy-btn {
             background: #4a90e2;
             color: white;
@@ -159,11 +139,9 @@ This is a digital products selling website
             cursor: pointer;
             transition: background 0.3s;
         }
-
         .buy-btn:hover {
             background: #357abd;
         }
-
         /* Admin Section */
         #admin {
             max-width: 800px;
@@ -174,25 +152,21 @@ This is a digital products selling website
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             display: none; /* Hidden by default */
         }
-
         #admin h2 {
             text-align: center;
             color: #4a90e2;
         }
-
         form {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-
         input, textarea {
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 1em;
         }
-
         button {
             background: #50e3c2;
             color: white;
@@ -202,15 +176,12 @@ This is a digital products selling website
             cursor: pointer;
             transition: background 0.3s;
         }
-
         button:hover {
             background: #3bb89f;
         }
-
         #product-list {
             margin-top: 30px;
         }
-
         .admin-product {
             border-bottom: 1px solid #ddd;
             padding: 10px 0;
@@ -218,17 +189,14 @@ This is a digital products selling website
             justify-content: space-between;
             align-items: center;
         }
-
         .admin-product button {
             background: #e94e77;
             padding: 5px 10px;
             margin-left: 10px;
         }
-
         .admin-product button.edit {
             background: #4a90e2;
         }
-
         /* Footer */
         footer {
             background: #333;
@@ -237,28 +205,23 @@ This is a digital products selling website
             padding: 20px;
             margin-top: 40px;
         }
-
         /* Animations */
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
-        @keyframes zoomIn {
+       @keyframes zoomIn {
             from { transform: scale(1); }
             to { transform: scale(1.2); }
         }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 { font-size: 2.5em; }
@@ -272,7 +235,6 @@ This is a digital products selling website
         <h1>Welcome to Digital Products Store</h1>
         <p>Your one-stop shop for premium digital downloads: eBooks, courses, software, and more!</p>
     </header>
-
     <nav>
         <ul>
             <li><a href="#home" onclick="showSection('home')">Home</a></li>
@@ -281,12 +243,10 @@ This is a digital products selling website
             <li><a href="#cart">Cart (0)</a></li>
         </ul>
     </nav>
-
     <section id="products">
         <h2>Featured Products</h2>
         <div class="product-grid" id="product-grid"></div>
     </section>
-
     <section id="admin">
         <h2>Admin Panel - Manage Products</h2>
         <form id="product-form">
@@ -299,11 +259,9 @@ This is a digital products selling website
         </form>
         <div id="product-list"></div>
     </section>
-
     <footer>
         &copy; 2025 Digital Products Store. All rights reserved. | Designed by Expert Software Engineer with 15+ Years Experience.
     </footer>
-
     <script>
         // Data Storage using LocalStorage (Simulating a Database)
         let products = JSON.parse(localStorage.getItem('products')) || [
@@ -311,12 +269,10 @@ This is a digital products selling website
             { id: 2, name: 'Python for Data Science', desc: 'Online course with videos and projects.', price: 49.99, img: 'https://via.placeholder.com/300x200?text=Python+Course' },
             { id: 3, name: 'Graphic Design Toolkit', desc: 'Software bundle for designers.', price: 29.99, img: 'https://via.placeholder.com/300x200?text=Design+Toolkit' }
         ];
-
         // Function to Save Products
         function saveProducts() {
             localStorage.setItem('products', JSON.stringify(products));
         }
-
         // Function to Render Products on Home Page
         function renderProducts() {
             const grid = document.getElementById('product-grid');
@@ -336,7 +292,6 @@ This is a digital products selling website
                 grid.appendChild(card);
             });
         }
-
         // Function to Render Admin Product List
         function renderAdminProducts() {
             const list = document.getElementById('product-list');
@@ -352,7 +307,6 @@ This is a digital products selling website
                 list.appendChild(div);
             });
         }
-
         // Add/Update Product
         document.getElementById('product-form').addEventListener('submit', (e) => {
             e.preventDefault();
@@ -361,21 +315,18 @@ This is a digital products selling website
             const desc = document.getElementById('product-desc').value;
             const price = parseFloat(document.getElementById('product-price').value);
             const img = document.getElementById('product-img').value;
-
             const index = products.findIndex(p => p.id === id);
             if (index > -1) {
                 products[index] = { id, name, desc, price, img };
             } else {
                 products.push({ id, name, desc, price, img });
             }
-
             saveProducts();
             renderProducts();
             renderAdminProducts();
             e.target.reset();
             document.getElementById('product-id').value = '';
         });
-
         // Edit Product
         function editProduct(id) {
             const product = products.find(p => p.id === id);
@@ -387,7 +338,6 @@ This is a digital products selling website
                 document.getElementById('product-img').value = product.img;
             }
         }
-
         // Delete Product
         function deleteProduct(id) {
             if (confirm('Are you sure you want to delete this product?')) {
@@ -397,7 +347,6 @@ This is a digital products selling website
                 renderAdminProducts();
             }
         }
-
         // Simple Cart Functionality (Placeholder)
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         function addToCart(id) {
@@ -410,19 +359,16 @@ This is a digital products selling website
                 document.querySelector('a[href="#cart"]').textContent = `Cart (${cart.length})`;
             }
         }
-
         // Section Navigation (SPA-like)
         function showSection(section) {
             document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
             const target = document.getElementById(section);
             if (target) target.style.display = 'block';
         }
-
         // Initial Render
         renderProducts();
         renderAdminProducts();
         showSection('products'); // Default to products
-
         // Animation Trigger on Load
         window.addEventListener('load', () => {
             document.querySelector('header p').style.animation = 'fadeInUp 1s ease-out forwards';
